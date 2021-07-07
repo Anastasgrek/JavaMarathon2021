@@ -9,6 +9,7 @@ public class Task2 {
         airplane.setLength(150);
         airplane.fillUp(50);
         airplane.fillUp(100);
+        airplane.fillUp(50);
         airplane.info();
 
     }

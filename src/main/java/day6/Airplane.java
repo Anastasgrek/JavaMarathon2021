@@ -21,7 +21,7 @@ public class Airplane {
      }
 
      public void fillUp(int n) {
-        this.fuel = getFuel() + n;
+        this.fuel = this.fuel + n;
      }
 
     public void setLength(int length) {

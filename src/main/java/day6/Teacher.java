@@ -3,6 +3,7 @@ package day6;
 public class Teacher {
     private String name;
     private String subject;
+    private String grade;
 
 
     public Teacher(String name, String subject) {
@@ -30,21 +31,19 @@ public class Teacher {
         int randomNumber = 2 + (int) (Math.random() * 3);
         switch (randomNumber){
             case 2:
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() +
-                        " по предмету " + this.subject + " на оценку неудовлетворительно");
+                this.grade =  "неудовлетворительно";
                 break;
             case 3:
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() +
-                        " по предмету " + this.subject + " на оценку удволетворительно");
+                this.grade = "удовлетворительно";
                 break;
             case 4:
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() +
-                        " по предмету " + this.subject + " на оценку хорошо");
+                this.grade = "хорошо";
                 break;
             case 5:
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() +
-                        " по предмету " + this.subject + " на оценку отлично");
+                this.grade = "отлчино";
                 break;
         }
+        System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() +
+                " по предмету " + this.subject + " на оценку " + this.grade);
     }
 }
